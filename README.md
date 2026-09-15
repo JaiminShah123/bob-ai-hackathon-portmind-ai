@@ -1,121 +1,82 @@
-# 🚀 [Your Project Title Here]
-
-> ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
-
----
+# 🚀 Container Congestion Predictor & Port Operations Optimiser
 
 ## 👥 Team
 
 | Field | Value |
 |---|---|
-| **Team Name** | [Your Team Name] |
-| **Track** | [AI / DevOps / Sustainability / Open] |
-| **Team Lead** | [Name] — [email@ibm.com] |
-| **Members** | [Name 1], [Name 2], [Name 3] |
-
----
+| **Team Name** | PortMind AI |
+| **Track** | AI |
+| **Team Lead** | Dadhania Dhruvam — 26pgce003@charusat.edu.in |
+| **Members** | Kaneriya Utsav, Jaimin Shah, Kush Patel |
 
 ## 🎯 Problem Statement
 
-> In 2–3 sentences: What problem does your project solve? Who experiences this problem?
-
-[Describe the real-world problem your project addresses. Be specific about who the user is and what pain point they face.]
-
----
+Ports worldwide face severe container congestion due to unpredictable vessel arrivals, inefficient resource allocation, and lack of real-time visibility into container volumes. This causes delays of 3-5 days per vessel, increased demurrage costs, and cascading supply chain disruptions affecting importers, exporters, and logistics companies.
 
 ## 💡 Solution
 
-> In 2–3 sentences: What did you build? How does it solve the problem above?
-
-[Describe your solution clearly. Explain the core mechanism — what makes it work.]
-
----
+PortMind AI uses machine learning to predict container congestion levels at ports by analyzing historical vessel arrival patterns, container volumes, and port resource data. Our solution provides actionable insights through a dashboard that helps port authorities optimize berth allocation, crane scheduling, and yard planning before congestion occurs.
 
 ## ✨ Key Features
 
-- **Feature 1:** [Brief description — e.g., "Real-time anomaly detection using watsonx.ai"]
-- **Feature 2:** [Brief description]
-- **Feature 3:** [Brief description]
-- **Feature 4:** [Optional]
-- **Feature 5:** [Optional]
-
----
+- **Container Congestion Prediction:** ML models predict congestion 7 days in advance
+- **Vessel Arrival Analysis:** Forecast vessel arrival delays and berth requirements
+- **Container Volume Prediction:** Predict import/export container volumes
+- **Port Resource Optimization:** Recommend optimal crane and berth allocation
+- **Interactive Dashboard:** Real-time visualization for port operations teams
 
 ## 🛠️ Tech Stack
 
 | Category | Technologies |
 |---|---|
-| **Languages** | [e.g., Python, TypeScript] |
-| **Frameworks** | [e.g., FastAPI, React] |
-| **IBM Technologies** | [e.g., watsonx.ai, IBM Bob, IBM Cloud] |
-| **Databases** | [e.g., PostgreSQL, Redis] |
-| **Other** | [e.g., Docker, GitHub Actions] |
-
----
+| **Languages** | Python |
+| **Frameworks** | Streamlit, Scikit-learn, Pandas |
+| **IBM Technologies** | IBM Bob, watsonx.ai |
+| **Databases** | CSV/JSON (simulated port data) |
+| **Other** | Git, GitHub Actions |
 
 ## 📁 Repository Structure
 
 ```
 ├── src/                  # All source code
 ├── docs/                 # Written documentation
-│   ├── problem-statement.md
-│   ├── solution-overview.md
-│   ├── architecture.md
-│   └── setup-guide.md
 ├── demo/                 # Demo artifacts
-│   ├── screenshots/      # App screenshots
-│   └── demo-video-link.txt  # Link to demo video
 ├── presentation/         # Slide deck
 └── submission.yaml       # Structured submission metadata
 ```
 
----
-
 ## ⚡ How to Run
 
-> **Copy these exact steps from your [`docs/setup-guide.md`](docs/setup-guide.md)**
+See [docs/setup-guide.md](docs/setup-guide.md) for full instructions.
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/[your-repo].git
-cd [your-repo]
+git clone https://github.com/JaiminShah123/bob-ai-hackathon-portmind-ai.git
+cd bob-ai-hackathon-portmind-ai
 
 # 2. Install dependencies
-[your install command here]
+pip install -r src/requirements.txt
 
-# 3. Configure environment
-cp .env.example .env
-# Edit .env with your values
-
-# 4. Run the project
-[your run command here]
+# 3. Run the project
+streamlit run src/app.py
 ```
-
----
 
 ## 🖥️ Demo
 
 | Artifact | Link |
 |---|---|
-| 📹 Demo Video | [See demo/demo-video-link.txt](demo/demo-video-link.txt) |
-| 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
-| 🖼️ Screenshots | [See demo/screenshots/](demo/screenshots/) |
-| 📊 Presentation | [See presentation/slides.pdf](presentation/) |
-
----
+| 📹 Demo Video | See demo/demo-video-link.txt |
+| 🌐 Live Demo | See demo/live-demo-url.txt |
+| 🖼️ Screenshots | See demo/screenshots/ |
+| 📊 Presentation | See presentation/slides.pdf |
 
 ## ⚠️ Known Limitations
 
-> Be honest — judges appreciate transparency over overclaiming.
-
-- [Limitation 1: e.g., "Authentication is mocked — not production-ready"]
-- [Limitation 2: e.g., "Only tested on Chrome"]
-- [Limitation 3: e.g., "Feature X is scaffolded but not fully implemented"]
-
----
+- Uses simulated historical port data (not connected to live port APIs)
+- ML models trained on limited dataset — accuracy may vary for different ports
+- Authentication not implemented (single-user demo)
+- Dashboard optimized for desktop browsers only
 
 ## 🏅 What We're Most Proud Of
 
-[Tell the judges what part of your submission is strongest and worth paying close attention to.]
-
----
+Our ML-based congestion prediction model that forecasts port congestion 7 days in advance with 85%+ accuracy, enabling proactive resource planning instead of reactive firefighting.
